@@ -27,10 +27,12 @@ if(file_exists('config.php')){
 		}
 	}
 	$configuration = "<?php\n";
+	$pass=md5($_POST['pass'].'html-writr');
 	$configuration .= "define('USER', '" . addslashes($_POST['user']) . "');\n";
-	$configuration .= "define('PASS', '" . addslashes($_POST['pass']) . "');\n";
+	$configuration .= "define('PASS', '" . addslashes($pass) . "');\n";
 	//create the file
 	file_put_contents('config.php', $configuration);
-	setcookie('WritrUserAuth', 1);
+	setcookie('writr', 1);
 	header("Location: writr.php");
+	exit;
 }?>

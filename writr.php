@@ -4,9 +4,12 @@ if(!file_exists('config.php')){
 	exit;
 }
 $exclude=array('resources');
-if(!isset($_COOKIE['WritrUserAuth'])){
+if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 	header("Location: writr_login.php");
 	exit;
+}
+if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
+	
 }
 ?>
 <html><head>
@@ -87,6 +90,7 @@ if(!$_GET['file']||(!is_file($_GET['file'])&&!is_dir($_GET['file']))){
   //]]>
   </script>
   <?php }?>
+  <br/><button type="submit"id="submit" onclick="document.cookie='writr' + '=' + '0';window.location = '';">Logout</button>
 </body></html>
 <?php if(!empty($_POST)){
 	$file=$_POST['file'];
