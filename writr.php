@@ -12,7 +12,7 @@ if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 	exit;
 }
 if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
-	
+
 }
 ?>
 <html><head>
@@ -23,7 +23,7 @@ if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 if(!$_GET['file']||(!is_file($_GET['file'])&&is_dir($_GET['file']))){
 	echo '<body class="no">';
 	if(is_dir($_GET['file'])){
-		echo '<button id="submit"href="writr.php">&laquo; Back</button><br/><br/>';
+		echo '<button id="submit"onclick="window.location=\'writr.php\'">&laquo; Back</button><br/><br/>';
 	}
 	?>
 	<table class="no">
@@ -47,7 +47,7 @@ if(!$_GET['file']||(!is_file($_GET['file'])&&is_dir($_GET['file']))){
 					}
 					echo '<tr><td class="text">'.$file.'</td><td><a href="?file='.$dir.$file.'">Edit</a> | <a href="'.$file.'">View</a></td></tr>';
 				}
-				
+
 			}
 		}
 	}else{
@@ -64,8 +64,8 @@ if(!$_GET['file']||(!is_file($_GET['file'])&&is_dir($_GET['file']))){
 		$title=str_replace('<title>', '', $title[0]);
 		$title=str_replace('</title>', '', $title);
 		//$title now has the page titles
-	}?>
-	<button id="submit"href="writr.php">&laquo; Back</button><br/>
+	}
+	echo '<button id="submit"onclick="window.location=\'writr.php\'">&laquo; Back</button><br/><br/>';?>
 	<h1>Editing <?php echo $_GET['file'];?></h1><br/>
 	<form action="writr.php" method="post">
 	<label for="title">Page Title</label><br/>
@@ -75,17 +75,21 @@ if(!$_GET['file']||(!is_file($_GET['file'])&&is_dir($_GET['file']))){
 	<label for="keywords">Page Keywords</label><br/>
 	<textarea name="keywords" ><?php echo $meta['keywords'];?></textarea><br/><br/>
 	<?php
-	
+
 	$content=preg_replace('#<meta.*(\/>|>.*</meta>)#smUi', '', $content);//removes the meta info from the file
-	if ( preg_match_all( '#<!--start editable-->.*<!--end editable-->#smUi',$content,$editable )) {
+	if ( preg_match_all( '#<!--start editable.*-->.*<!--end editable-->#smUi',$content,$editable )) {
 		//gets all the editable areas
 		$i=1;
 		foreach ( $editable[0] as $edit ) {
 			$content=str_replace($edit, "EDIT:".$i, $content);
+			$name=preg_replace('#<!--start editable(.*)-->.*<!--end editable-->#smUi', '$1', $edit);
 			//replace all the editbale areas with a placeholder so we can go back and fill in their content
 			$edit=str_replace('<!--start editable-->', '', $edit);
 			$edit=str_replace('<!--end editable-->', '', $edit);
-			echo '<label for="edit['.$i.']" >Editable Area '.$i.'</label><br/>';
+			if(!$name||$name==""){
+				$name=$i;
+			}
+			echo '<label for="edit['.$i.']" >Editable Area '.$name.'</label><br/>';
 			echo '<textarea class="advanced" name="edit['.$i.']" id="edit'.$i.'">'.$edit.'</textarea><br/>';
 			$i++;
 		}
