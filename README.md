@@ -1,6 +1,22 @@
 #Overview
-  Html Writr is an app that allows you to quickly and easily edit the content of static (html) webpages. To Install, simply upload the contents of the html writr folder to the root of the website that you want to edit. Then navigate to that location on a web browser. Install the program, and you should be logged in. The program recognizes all html files from where you put it, and allows you easy control over the content. 
+  Html Writr is an app that allows you to quickly and easily edit the content of static (html) webpages with a simple frontend interface. 
+#Features
+* Easy to install
+* Easy to setup
+* Tiny file size (24 kb with images)
+* Quick and easy to use
+* Port any static html theme within a minute
+* Edit meta information for better seo
+* No database required
+* Mit Open Source Licensed
+* Wysiwyg Editor
+* Simple to use
+
 #Docs
-  To make some text editable just put <!--start editable--> at the beginning of the editable text and <!--end editable--> at the end. Its that easy. Included is a sample file to help you get started. Html Writr automatically parses your page title, and your meta description/keywords so you have easy control over that as well.
+  Docs are available at https://github.com/html-writr/Html-Writr/wiki
+#Help
+  Working on it, for now just send me a github message.
+#Contribute
+A list of features planned is available at http://roadma.ps/1oC. If you have any time to contribute, it  would be greatly appreciated!
 #Credits
   Uses http://nicedit.com/ for the wysiwyg editor.
