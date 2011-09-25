@@ -5,7 +5,7 @@ if(file_exists('config.php')){
 } ?>
 <html>
 <head>
-	<link rel="stylesheet" href="resources/install.css"/>
+	<link rel="stylesheet" href="resources/base.css"/>
 </head>
 <body>
 	<form method="post" action="writr_install.php">
