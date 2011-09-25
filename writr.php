@@ -23,7 +23,7 @@ if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 if(!$_GET['file']||(!is_file($_GET['file'])&&is_dir($_GET['file']))){
 	echo '<body class="no">';
 	if(is_dir($_GET['file'])){
-		echo '<button id="submit"href="writr.php">&laquo; Back</button><br/><br/>';
+		echo '<button id="submit"onclick="window.location=\'writr.php\'">&laquo; Back</button><br/><br/>';
 	}
 	?>
 	<table class="no">
@@ -64,8 +64,8 @@ if(!$_GET['file']||(!is_file($_GET['file'])&&is_dir($_GET['file']))){
 		$title=str_replace('<title>', '', $title[0]);
 		$title=str_replace('</title>', '', $title);
 		//$title now has the page titles
-	}?>
-	<button id="submit"href="writr.php">&laquo; Back</button><br/>
+	}
+	echo '<button id="submit"onclick="window.location=\'writr.php\'">&laquo; Back</button><br/><br/>';?>
 	<h1>Editing <?php echo $_GET['file'];?></h1><br/>
 	<form action="writr.php" method="post">
 	<label for="title">Page Title</label><br/>
