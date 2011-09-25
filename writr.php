@@ -14,26 +14,36 @@ if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 ?>
 <html><head>
 	<link rel="stylesheet" href="resources/base.css"/>
-	<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-						
+	<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>					
 </head>
 <?php 
-if(!$_GET['file']||(!is_file($_GET['file'])&&!is_dir($_GET['file']))){
+if(!$_GET['file']||(!is_file($_GET['file'])&&is_dir($_GET['file']))){
 	echo '<body class="no">';
-?>
+	if(is_dir($_GET['file'])){
+		echo '<button id="submit"href="writr.php">&laquo; Back</button><br/><br/>';
+	}
+	?>
 	<table class="no">
 	<tr><td class="header">Files</td><td class="header">Options</td></tr><?php
 	include('config.php');
-	$handle=opendir('.');
+	if(is_dir($_GET['file'])){
+		$handle=opendir($_GET['file']);
+	}else{
+		$handle=opendir('.');
+	}
 	if($handle) {
 		while(($file = readdir($handle)) !== false) {
 			$extension = end(explode(".",$file));
 			if (substr($file, 0, 1) != '.' && ($extension=='html'||is_dir($file))&&!in_array($file, $exclude)) {
-				$class='text';
 				if(is_dir($file)){
-					$class='folder';
+					echo '<tr><td class="folder">'.$file.'</td><td><a href="?file='.$file.'">Open</a></td></tr>';
+				}else{
+					if(is_dir($_GET['file'])){
+						$dir=$_GET['file'].'/';
+					}
+					echo '<tr><td class="text">'.$file.'</td><td><a href="?file='.$dir.$file.'">Edit</a> | <a href="'.$file.'">View</a></td></tr>';
 				}
-				echo '<tr><td class="'.$class.'">'.$file.'</td><td><a href="?file='.$file.'">Edit</a> | <a href="'.$file.'">View</a></td></tr>';
+				
 			}
 		}
 	}else{
@@ -48,9 +58,9 @@ if(!$_GET['file']||(!is_file($_GET['file'])&&!is_dir($_GET['file']))){
 		$title=str_replace('<title>', '', $title[0]);
 		$title=str_replace('</title>', '', $title);
 	}?>
-	<a href="writr.php">&laquo; Back</a><br/>
+	<button id="submit"href="writr.php">&laquo; Back</button><br/>
 	<h1>Editing <?php echo $_GET['file'];?></h1><br/>
-	<form action="index.php" method="post">
+	<form action="writr.php" method="post">
 	<label for="title">Page Title</label><br/>
 	<input type="text" name="title" value="<?php echo $title;?>"/><br/><br/>
 	<label for="description">Page Description</label><br/>
