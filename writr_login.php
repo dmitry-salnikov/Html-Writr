@@ -5,7 +5,7 @@ if(!file_exists('config.php')){
 }
 ?>
 <html><head>
-	<link rel="stylesheet" href="resources/base.css"/>
+	<link rel="stylesheet" href="core/css/base.css"/>
 						
 </head>
 <body class="no">

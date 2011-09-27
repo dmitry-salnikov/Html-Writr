@@ -16,7 +16,7 @@ if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 }
 ?>
 <html><head>
-	<link rel="stylesheet" href="resources/base.css"/>
+	<link rel="stylesheet" href="core/css/base.css"/>
 	<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>					
 </head>
 <?php 
@@ -131,4 +131,7 @@ if(!$_GET['file']||(!is_file($_GET['file'])&&is_dir($_GET['file']))){
 		$content=str_replace( "EDIT:".$i, "<!--start editable-->".$_POST['edit'][$i]."<!--end editable-->", $content);
 	}
 	file_put_contents($file, $content);
+	include 'core/helpers/events.php';
+	fire('saveHtml',array(),$content);
+	//fire the event so we can manipulate the content.
 }?>

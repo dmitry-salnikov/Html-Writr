@@ -37,8 +37,8 @@ table.no td.status {text-align: center}
 table.no td.header {font-weight: bold; background: #D3E4F0}
 table.no td.table { padding: 0px;background: #fff; color: #666}
 table.no td.table td.header{ font-weight: bold; background: #d1d1d1}
-table.no td.text { background-position: left center; background-repeat: no-repeat; background-image: url(text.png);}
-table.no td.folder { background-position: left center; background-repeat: no-repeat; background-image: url(folder.jpg);}
+table.no td.text { background-position: left center; background-repeat: no-repeat; background-image: url(../images/text.png);}
+table.no td.folder { background-position: left center; background-repeat: no-repeat; background-image: url(../images/folder.jpg);}
 
 h2{
 	font-size: 23px;
