@@ -12,10 +12,9 @@
 */
 	
 class fileHelper {
-    //from http://www.php.net/manual/en/function.rmdir.php#98622
     /*
 	 Function: rrmdir
-	Deletes its directory and everything in it
+	Deletes its directory and everything in it from http://www.php.net/manual/en/function.rmdir.php#98622
 	Parameters:
 	  dir- the directory you want to delete
 	*/

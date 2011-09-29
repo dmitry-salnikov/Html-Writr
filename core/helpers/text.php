@@ -1,16 +1,27 @@
 <?php defined('CMS_LOADED') or die("Access Denied.");
-/**
-	@file		text.php
-	@version	1.0
-	@date		9/15/2011
-	@author		Jack Lightbody <jack.lightbody@gmail.com>
-	@project	Html Writr
-	@type		helper
-	@info		
-		-- Functions to deal with text
+/*
+	Class: Text
+    Functions useful for working with text
+    About:
+    - file		text.php
+	- version	1.0
+	- date		9/29/2011
+	- author	Jack Lightbody <jack.lightbody@gmail.com>
+	- project	Html Writr
+	- type		Helper
 */
 	
 class Text {
+	/*
+	  Function: sanitize
+		Sanitizes a string
+	  Parameters:
+	  	text- the string you want sanitized
+	  	allowed- the allowed tags in the string
+	  Returns:
+	  	the cleaned string
+	  	
+	*/
      public function sanitize($text, $allowed="") {
      	if ($text == null) {
 			return "";

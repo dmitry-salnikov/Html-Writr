@@ -47,7 +47,8 @@ class Events {
 	
 	   event - The name of the event you want to extend
 	   args - an array of the data you want to pass on to extensions
-	
+	Returns:
+      The output of the events
 	See Also:
 	   <fireEvent>
 	   <fireEventEdit>
@@ -94,7 +95,8 @@ class Events {
 	
 	   event - The name of the event you want to extend
 	   args - an array of the data you want to pass on to extensions
-	
+	Returns:
+      The output of the events
 	See Also:
 	   <fire>
 	   <fireEventEdit>
