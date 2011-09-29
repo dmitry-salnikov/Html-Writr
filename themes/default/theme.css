@@ -1,14 +1,21 @@
+ h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #000000; }
+    h3 { text-align: center; color: #000000; }
+    a { color: #000000; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+    pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:20px; font-style: italic; }
 body{
-	margin-left:auto;
+  	margin-left:auto;
 	margin-right:auto;
 	font-family: Helvetica;
 	color:#444;
-}
-body.no, body.install{
-	width: 300px;
-}
-body.file{
-	width: 625px;
+	font-family: Helvetica, Arial, FreeSans, san-serif;
+	width: 500px;
 }
 h1{
 	text-align: center;
@@ -37,9 +44,9 @@ table.no td.status {text-align: center}
 table.no td.header {font-weight: bold; background: #D3E4F0}
 table.no td.table { padding: 0px;background: #fff; color: #666}
 table.no td.table td.header{ font-weight: bold; background: #d1d1d1}
-table.no td.text { background-position: left center; background-repeat: no-repeat; background-image: url(../images/text.png);}
-table.no td.folder { background-position: left center; background-repeat: no-repeat; background-image: url(../images/folder.jpg);}
-table.no td.preview { padding:0px;}
+table.no td.text { background-position: left center; background-repeat: no-repeat; background-image: url(text.png);}
+table.no td.folder { background-position: left center; background-repeat: no-repeat; background-image: url(folder.jpg);}
+
 h2{
 	font-size: 23px;
 	color: #b3b3b3;
@@ -48,50 +55,13 @@ h1{
 	font-size: 30px;
 	color: #444;
 }
+label{
+	margin-bottom:10px;
+}
 input {
 	font-size: 16px;
 	margin-bottom: 20px;
 	width: 50%;
-}
-button{
-	font-size: 16px;
-	padding: 10px;
-}
-.submit{
-	width: 100%;
-}
-.half{
-	width: 48%;
-}
-.left{
-	float: left;
-}
-.right{
-	float:right;
-}
-a.submit{
-	-webkit-appearance: button;
-	font-size: 16px;
-	padding: 15px 0px;
-	width: 100%;
-	text-align: center;
-	color: #444;
-	text-decoration: none;
-	background-color: #f2f2f2;
-	border:1px solid #7f7f7f;
-}
-.preview{
-	margin-top: 0px;
-}
-input.login{
-	width:300px;
-}
-.install{
-	width: 300px;
-	margin-left:auto;
-	margin-right:auto;
-	font-family: Helvetica;
-	color:#444;
 }
 hr{
 	height: 3px;
@@ -100,11 +70,24 @@ hr{
 	margin-left: -50px;
 	border: none;
 }
-.install input {
+#submit{
 	font-size: 16px;
-	margin-bottom: 20px;
+	padding: 10px;
 	width: 100%;
 }
-label{
-	margin-bottom:10px;	 	
+input.login{
+	width:300px;
+}
+ul li{
+	margin-left: -20px;
+}
+a{
+	color: #36c41f;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.footer{
+	font-size: 12px;
 }

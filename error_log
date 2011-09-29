@@ -1,0 +1,168 @@
+[26-Sep-2011 20:26:45] PHP Parse error:  syntax error, unexpected ')' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[26-Sep-2011 20:27:01] PHP Parse error:  syntax error, unexpected ')' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[26-Sep-2011 20:27:06] PHP Parse error:  syntax error, unexpected ')' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[26-Sep-2011 20:27:37] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 60
+[26-Sep-2011 20:27:56] PHP Parse error:  syntax error, unexpected T_IS_NOT_IDENTICAL in /home/stup1did/public_html/dev Html-Writr/writr.php on line 75
+[26-Sep-2011 20:28:33] PHP Parse error:  syntax error, unexpected T_IS_NOT_IDENTICAL in /home/stup1did/public_html/dev Html-Writr/writr.php on line 75
+[26-Sep-2011 20:28:34] PHP Parse error:  syntax error, unexpected T_IS_NOT_EQUAL in /home/stup1did/public_html/dev Html-Writr/writr.php on line 75
+[26-Sep-2011 20:28:50] PHP Parse error:  syntax error, unexpected ')' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 75
+[26-Sep-2011 20:28:56] PHP Parse error:  syntax error, unexpected '{' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 130
+[26-Sep-2011 20:28:57] PHP Parse error:  syntax error, unexpected '{' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 130
+[26-Sep-2011 20:29:07] PHP Parse error:  syntax error, unexpected '{' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 130
+[26-Sep-2011 20:31:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:22) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:31:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:22) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 36
+[26-Sep-2011 20:33:52] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:22) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:33:52] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:22) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 36
+[26-Sep-2011 20:34:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:22) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 34
+[26-Sep-2011 20:34:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:22) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:34:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:21) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 33
+[26-Sep-2011 20:34:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:21) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 34
+[26-Sep-2011 20:36:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:36:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 36
+[26-Sep-2011 20:36:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:36:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 36
+[26-Sep-2011 20:37:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:37:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:38:21] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:38:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:39:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 35
+[26-Sep-2011 20:39:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_install.php:19) in /home/stup1did/public_html/dev Html-Writr/writr_install.php on line 33
+[26-Sep-2011 20:45:28] PHP Parse error:  syntax error, unexpected '}' in /home/stup1did/public_html/dev Html-Writr/writr.php on line 64
+[26-Sep-2011 20:50:44] PHP Warning:  opendir(default) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr.php on line 76
+[26-Sep-2011 20:50:44] PHP Fatal error:  Uncaught exception 'Exception' with message 'Theme does not have requisite files.' in /home/stup1did/public_html/dev Html-Writr/writr.php:93
+Stack trace:
+#0 {main}
+  thrown in /home/stup1did/public_html/dev Html-Writr/writr.php on line 93
+[26-Sep-2011 21:12:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_login.php:14) in /home/stup1did/public_html/dev Html-Writr/writr_login.php on line 20
+[26-Sep-2011 21:12:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_login.php:14) in /home/stup1did/public_html/dev Html-Writr/writr_login.php on line 21
+[26-Sep-2011 21:12:32] PHP Parse error:  syntax error, unexpected '<' in /home/stup1did/public_html/dev Html-Writr/writr_login.php on line 6
+[26-Sep-2011 21:12:40] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Filename cannot be empty in /home/stup1did/public_html/dev Html-Writr/writr.php on line 114
+[26-Sep-2011 21:12:40] PHP Warning:  get_meta_tags() [<a href='function.get-meta-tags'>function.get-meta-tags</a>]: Filename cannot be empty in /home/stup1did/public_html/dev Html-Writr/writr.php on line 115
+[26-Sep-2011 21:12:49] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Filename cannot be empty in /home/stup1did/public_html/dev Html-Writr/writr.php on line 114
+[26-Sep-2011 21:12:49] PHP Warning:  get_meta_tags() [<a href='function.get-meta-tags'>function.get-meta-tags</a>]: Filename cannot be empty in /home/stup1did/public_html/dev Html-Writr/writr.php on line 115
+[27-Sep-2011 20:49:14] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 77
+[27-Sep-2011 20:49:24] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 77
+[27-Sep-2011 20:50:33] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 71
+[27-Sep-2011 20:50:37] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 71
+[27-Sep-2011 20:50:39] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 71
+[27-Sep-2011 20:54:40] PHP Parse error:  syntax error, unexpected T_STRING in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 16
+[27-Sep-2011 20:54:54] PHP Parse error:  syntax error, unexpected T_STRING in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 16
+[27-Sep-2011 20:55:00] PHP Parse error:  syntax error, unexpected T_STRING in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 16
+[27-Sep-2011 20:58:22] PHP Parse error:  syntax error, unexpected ')' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 20
+[27-Sep-2011 20:58:24] PHP Parse error:  syntax error, unexpected ')' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 20
+[27-Sep-2011 20:58:25] PHP Parse error:  syntax error, unexpected ')' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 20
+[27-Sep-2011 21:00:36] PHP Warning:  file_get_contents(1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 21
+[27-Sep-2011 21:00:36] PHP Parse error:  syntax error, unexpected '}' in /home/stup1did/public_html/dev Html-Writr/core/helpers/events.php on line 69
+[27-Sep-2011 21:01:17] PHP Parse error:  syntax error, unexpected '}' in /home/stup1did/public_html/dev Html-Writr/core/helpers/events.php on line 69
+[27-Sep-2011 21:04:47] PHP Parse error:  syntax error, unexpected $end in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 134
+[27-Sep-2011 21:04:56] PHP Parse error:  syntax error, unexpected $end in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 134
+[27-Sep-2011 21:05:13] PHP Parse error:  syntax error, unexpected $end in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 134
+[28-Sep-2011 14:58:08] PHP Warning:  copy(//test.html) [<a href='function.copy'>function.copy</a>]: failed to open stream: Permission denied in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 21
+[28-Sep-2011 14:58:08] PHP Warning:  file_get_contents(//test.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 22
+[28-Sep-2011 14:58:08] PHP Warning:  file_put_contents(//test.html) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 26
+[28-Sep-2011 14:58:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_add.php:21) in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 28
+[28-Sep-2011 14:58:34] PHP Warning:  copy(//test.html) [<a href='function.copy'>function.copy</a>]: failed to open stream: Permission denied in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 21
+[28-Sep-2011 14:58:34] PHP Warning:  file_get_contents(//test.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 22
+[28-Sep-2011 14:58:34] PHP Warning:  file_put_contents(//test.html) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 26
+[28-Sep-2011 14:58:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_add.php:21) in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 28
+[28-Sep-2011 16:21:30] PHP Fatal error:  Call to undefined function  fire() in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 31
+[28-Sep-2011 16:59:21] PHP Fatal error:  Call to undefined function  fire() in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 31
+[28-Sep-2011 17:01:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:35) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 101
+[28-Sep-2011 17:03:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:35) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 101
+[28-Sep-2011 17:07:20] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 102
+[28-Sep-2011 17:08:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 102
+[28-Sep-2011 17:12:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 17:13:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 17:16:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 17:16:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 17:58:57] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 18:04:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 104
+[28-Sep-2011 19:00:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 104
+[28-Sep-2011 19:00:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 104
+[28-Sep-2011 19:01:19] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:29) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 19:02:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 106
+[28-Sep-2011 19:02:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 19:02:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 19:02:16] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 19:02:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 19:02:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:36) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 19:03:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 19:03:40] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 105
+[28-Sep-2011 19:37:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 106
+[28-Sep-2011 19:40:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:28) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 107
+[28-Sep-2011 19:41:09] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:28) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 107
+[28-Sep-2011 19:41:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:24) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 107
+[28-Sep-2011 19:41:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:24) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 107
+[28-Sep-2011 19:45:35] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Unknown modifier 'h' in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 69
+[28-Sep-2011 19:45:35] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Unknown modifier 'a' in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 69
+[28-Sep-2011 19:45:36] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Unknown modifier 'h' in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 69
+[28-Sep-2011 19:45:36] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Unknown modifier 'a' in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 69
+[28-Sep-2011 19:45:38] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Unknown modifier 'h' in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 69
+[28-Sep-2011 19:45:38] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Unknown modifier 'a' in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 69
+[28-Sep-2011 19:49:16] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Delimiter must not be alphanumeric or backslash in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 74
+[28-Sep-2011 19:49:16] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Delimiter must not be alphanumeric or backslash in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 74
+[28-Sep-2011 19:49:29] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Delimiter must not be alphanumeric or backslash in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 74
+[28-Sep-2011 19:49:29] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Delimiter must not be alphanumeric or backslash in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 74
+[28-Sep-2011 19:50:44] PHP Parse error:  syntax error, unexpected T_STRING in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 69
+[28-Sep-2011 19:50:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:24) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 108
+[28-Sep-2011 19:51:09] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 107
+[28-Sep-2011 19:51:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 107
+[28-Sep-2011 19:57:45] PHP Warning:  unlink() [<a href='function.unlink'>function.unlink</a>]: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr.php on line 26
+[28-Sep-2011 19:58:59] PHP Fatal error:  Call to undefined method File::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 19:59:13] PHP Fatal error:  Call to undefined method File::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 19:59:15] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 19:59:26] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:00:26] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:00:28] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:00:36] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:02:27] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:02:28] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:04:07] PHP Fatal error:  Call to undefined method File::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:05:30] PHP Fatal error:  Call to undefined method FileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:05:32] PHP Fatal error:  Call to undefined method FileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:05:41] PHP Fatal error:  Call to undefined method FileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:08:25] PHP Fatal error:  Call to undefined method FileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:08:26] PHP Fatal error:  Call to undefined method FileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:08:32] PHP Fatal error:  Call to undefined method FileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:08:33] PHP Fatal error:  Call to undefined method FileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:12:09] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/stup1did/public_html/dev Html-Writr/writr.php on line 25
+[28-Sep-2011 20:12:11] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/stup1did/public_html/dev Html-Writr/writr.php on line 25
+[28-Sep-2011 20:12:18] PHP Fatal error:  Call to undefined method FileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 25
+[28-Sep-2011 20:13:56] PHP Warning:  require(core/helpers/file.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[28-Sep-2011 20:13:56] PHP Warning:  require(core/helpers/file.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[28-Sep-2011 20:13:56] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'core/helpers/file.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[28-Sep-2011 20:14:08] PHP Fatal error:  Call to undefined method fileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 25
+[28-Sep-2011 20:14:10] PHP Fatal error:  Call to undefined method fileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 25
+[28-Sep-2011 20:15:33] PHP Fatal error:  Call to undefined method fileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 25
+[28-Sep-2011 20:15:34] PHP Fatal error:  Call to undefined method fileHelper::deleteDir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 25
+[28-Sep-2011 20:18:36] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/stup1did/public_html/dev Html-Writr/core/helpers/fileHelper.php on line 19
+[28-Sep-2011 20:18:44] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:18:45] PHP Fatal error:  Call to undefined function  deletedir() in /home/stup1did/public_html/dev Html-Writr/writr.php on line 24
+[28-Sep-2011 20:37:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_add.php:34) in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 92
+[28-Sep-2011 20:38:29] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 30
+[28-Sep-2011 20:38:30] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 30
+[28-Sep-2011 20:48:06] PHP Fatal error:  Uncaught exception 'Exception' with message 'Invalid Name' in /home/stup1did/public_html/dev Html-Writr/writr_add.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/stup1did/public_html/dev Html-Writr/writr_add.php on line 18
+[28-Sep-2011 20:54:40] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Compilation failed: missing terminating ] for character class at offset 15 in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 75
+[28-Sep-2011 20:54:40] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: Compilation failed: missing terminating ] for character class at offset 15 in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 75
+[28-Sep-2011 20:54:51] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 46
+[28-Sep-2011 20:54:51] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 46
+[28-Sep-2011 20:55:58] PHP Parse error:  syntax error, unexpected $end in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 54
+[28-Sep-2011 21:04:08] PHP Parse error:  syntax error, unexpected $end in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 54
+[28-Sep-2011 21:06:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 121
+[28-Sep-2011 21:06:54] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:37) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 121
+[29-Sep-2011 17:57:12] PHP Warning:  require(core/helpers/fileHelper.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[29-Sep-2011 17:57:12] PHP Warning:  require(core/helpers/fileHelper.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[29-Sep-2011 17:57:12] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'core/helpers/fileHelper.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[29-Sep-2011 17:59:36] PHP Warning:  require(core/helpers/fileHelper.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[29-Sep-2011 17:59:36] PHP Warning:  require(core/helpers/fileHelper.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[29-Sep-2011 17:59:36] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'core/helpers/fileHelper.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/stup1did/public_html/dev Html-Writr/writr.php on line 23
+[29-Sep-2011 18:00:45] PHP Parse error:  syntax error, unexpected T_STRING in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 31
+[29-Sep-2011 18:00:56] PHP Parse error:  syntax error, unexpected T_STRING in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 31
+[29-Sep-2011 18:01:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:38) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 122
+[29-Sep-2011 18:01:50] PHP Warning:  Invalid argument supplied for foreach() in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 112
+[29-Sep-2011 18:01:52] PHP Warning:  Invalid argument supplied for foreach() in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 112
+[29-Sep-2011 18:02:10] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/stup1did/public_html/dev Html-Writr/writr_edit.php:38) in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 122
+[29-Sep-2011 18:03:23] PHP Warning:  Invalid argument supplied for foreach() in /home/stup1did/public_html/dev Html-Writr/writr_edit.php on line 112
