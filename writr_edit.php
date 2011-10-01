@@ -27,7 +27,7 @@ if(!empty($_POST)){
 		$content=str_replace( "EDIT:".$key, $start.$edit.'<!--end editable-->', $content);
 	}
 	include 'core/helpers/events.php';
-	$content=Events::fire('page_edit',array($file,$title,$description,$keywords),$content);
+	Events::fireEvent('page_edit',array($content,$file,$title,$description,$keywords));
 	//fire the event so we can manipulate the content.
 	file_put_contents($file, $content);
 	header("Location: writr.php");
