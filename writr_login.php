@@ -5,14 +5,17 @@ if(!file_exists('config.php')){
 }
  if(!empty($_POST)){
 	include('config.php');
+	include 'core/helpers/events.php';
 	$user=strip_tags($_POST['user']);
 	$pass=strip_tags($_POST['pass']);
 	$pass=md5($pass.'html-writr');
 	if($user==USER && $pass==PASS){
+		$args=Events::fireEvent('on_user_valid_login',array($user));//can't be edited
 		setcookie("writr", "1", time() + 3600);
 		header("Location: writr.php");
 		exit;
 	}else{
+		$args=Events::fireEvent('on_user_invalid_login',array($user));//can't be edited
 		echo 'Invalid username or password<br/>';
 	}
 }?>

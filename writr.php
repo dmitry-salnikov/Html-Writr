@@ -18,7 +18,7 @@ if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 	<script src="core/js/base.js" type="text/javascript"></script>					
 </head>
 <?php 
-if($_GET['delete']==true){
+if(isset($_GET['delete'])&&$_GET['delete']==true){
 	if(is_dir($_GET['rmfile'])){
 		require('core/helpers/file.php');
 		fileHelper::rrmdir($_GET['rmfile']);
@@ -26,14 +26,14 @@ if($_GET['delete']==true){
 		unlink($_GET['rmfile']);	
 	}
 }
-if(is_file($_GET['file'])){
+if(isset($_GET['file'])&&is_file($_GET['file'])){
 	//redirect to edit
-}elseif($_GET['add']&&$_GET['add']=='true'){
+}elseif(isset($_GET['add'])&&$_GET['add']&&$_GET['add']=='true'){
 	//redirect to add
 }else{
 	//if we're browsing a folders
 	echo '<body class="no">';
-	if(is_dir($_GET['file'])){
+	if(isset($_GET['file'])&&is_dir($_GET['file'])){
 		echo '<button class="submit"onclick="window.location=\'writr.php\'">&laquo; Back</button><br/><br/>';
 	}
 	?>
@@ -41,14 +41,15 @@ if(is_file($_GET['file'])){
 	<tr><td class="header">Files</td><td class="header">Options</td></tr><?php
 	include('config.php');
 	//if the current path is a dir then we open the dir- otherwise we open the root
-	if(is_dir($_GET['file'])){
+	if(isset($_GET['file'])&&is_dir($_GET['file'])){
 		$handle=opendir($_GET['file']);
 	}else{
 		$handle=opendir('.');
 	}
 	if($handle) {
 		while(($file = readdir($handle)) !== false) {
-			$extension = end(explode(".",$file));
+			$dots=explode(".",$file);
+			$extension = end($dots);
 			if (substr($file, 0, 1) != '.' && ($extension=='html'||is_dir($file))&&!in_array($file, $exclude)) {
 				if(is_dir($file)){
 					echo '<tr><td class="folder">'.$file.'</td><td><a href="?file='.$file.'">Open</a> | <a href="?delete=true&rmfile='.$file.'">Delete</a></td></tr>';
@@ -66,8 +67,12 @@ if(is_file($_GET['file'])){
 		throw new exception('Can\'t open specified dir.');
 	}
 	echo '</table>';
-	$dir=$_GET['file'];
-	if($dir==''){
+	if(isset($_GET['file'])){
+		$dir=$_GET['file'];
+		if($dir==''){
+			$dir='/';
+		}
+	}else{
 		$dir='/';
 	}
 	echo '<br/><button type="submit"class="submit half" onclick="window.location = \'writr_add.php?file='.$dir.'\';">Add Page</button><button type="submit"class="submit half right" onclick="window.location = \'writr_add.php?new=folder&file='.$dir.'\';">Add Folder</button><br/>';

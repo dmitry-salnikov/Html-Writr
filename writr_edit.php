@@ -18,8 +18,6 @@ if(!empty($_POST)){
 	$title=$_POST['title'];
 	$count=$_POST['counter'];
 	$content=htmlspecialchars_decode($_POST['content']);
-	$content=preg_replace('#<title>(.*)</title>.*#smUi','',$content);
-	$content=str_replace('<head>', '<head><title>'.$title.'</title><meta name="description" content="'.$description.'" /><meta name="keywords" content="'.$keywords.'" />', $content);
 	//add meta stuff and title
 	foreach($_POST['edit'] as $key=>$edit){
 		//replace the placeholders with content
@@ -27,8 +25,15 @@ if(!empty($_POST)){
 		$content=str_replace( "EDIT:".$key, $start.$edit.'<!--end editable-->', $content);
 	}
 	include 'core/helpers/events.php';
-	Events::fireEvent('page_edit',array($content,$file,$title,$description,$keywords));
-	//fire the event so we can manipulate the content.
+	$args=Events::fire('page_edit',array($content,$title,$description,$keywords,$file));
+	$content=$args[1];
+	$title=$args[2];
+	$description=$args[3];
+	$keywords=$args[4];
+	//format the data we get back from the event
+	$content=preg_replace('#<title>(.*)</title>.*#smUi','',$content);
+	$content=str_replace('<head>', '<head><title>'.$title.'</title><meta name="description" content="'.$description.'" /><meta name="keywords" content="'.$keywords.'" />', $content);
+	//fire the event so others can manipulate the content
 	file_put_contents($file, $content);
 	header("Location: writr.php");
 }

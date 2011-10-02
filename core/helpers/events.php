@@ -41,7 +41,7 @@ class Events {
    	/*
 	 Function: fire
 	
-	Adds an event to the system. Pass any content that you want modified as the first value in args
+	Queries all registered events to get their data. Pass an array of elements that you want modified into this.
 	
 	Parameters:
 	
@@ -89,10 +89,10 @@ class Events {
     /*
 	 Function: fireEventEdit
 	
-	Fires the event and recieves the modified information. Put the content you want modified as the first value in args
-	
+	Fires the event and recieves the modified information. 
+	Put the content you want modified as the first value in args
+	Building an event? You need to return an array of the modified args in the same format and order as you get it.
 	Parameters:
-	
 	   event - The name of the event you want to extend
 	   args - an array of the data you want to pass on to extensions
 	Returns:
@@ -106,26 +106,16 @@ class Events {
     	$i=0;
         if(isset(self::$events[$event])){
             foreach(self::$events[$event] as $ev){
-            	if($ev['type']==1){
-            		//only do the ones that return data
+            	if($ev['type']==1){//only do the ones that return data
             		include $ev['location'];
             		$function=$ev['function'];
             		//if theres a return on this we'll capture that data.
-            		if($i==0){
-                		$eventReturn=call_user_func_array($function,$content, $args);
-                	}else{
-                		$eventReturn=call_user_func_array($function, $eventReturn,$args);
-                		//if we've run this before use the data from the last one, otherwise use the data given to us.
-                	}
+                	$args=call_user_func_array($function, $args);
                 	$i++;
                 }
             }
         }
-        if($eventReturn&&$eventReturn!=""){
-        	return $eventReturn;
-        }else{
-        	return $content;
-        }
-        // make sure theres some sutff we're returning
+        return $args;
+        // return the modified data. Yipee!
     }
 }

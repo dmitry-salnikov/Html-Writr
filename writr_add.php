@@ -42,7 +42,9 @@ if(!empty($_POST)){
 		$content=preg_replace('#(<link.*rel="stylesheet".* href=")(.*)(".*\/>)#smUi','$1'.$href.'$2$3',$content);
 		//add meta stuff
 		include 'core/helpers/events.php';
-		Events::fireEvent('page_edit',array($content,$filename,$template,$themename));
+		$args=Events::fire('page_edit',array($content,$filename,$template,$themename));//only modifying $content through this event has any effect
+		$content=$args[1];
+		//format the data from the events
 		file_put_contents($filename, $content);
 		//fire the event so we can manipulate the content.
 		header("Location: writr_edit.php?file=".$filename);
