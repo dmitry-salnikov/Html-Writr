@@ -1,15 +1,14 @@
 <?php
+include 'core/helpers/3rdparty/spoon/spoon.php';
 //if config isn't made then we need to install
 if(!file_exists('config.php')){
-	header("Location: writr_install.php");
-	exit;
+	SpoonHTTP::redirect('writr_install.php');
 }
 //add files and folders that you don't want edited to this array
 $exclude=array('themes','core','examples');
 //redirect to login if no cookie
 if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
-	header("Location: writr_login.php");
-	exit;
+	SpoonHTTP::redirect('writr_login.php');
 }
 ?>
 <html><head>
@@ -23,13 +22,25 @@ if(isset($_GET['delete'])&&$_GET['delete']==true){
 		require('core/helpers/file.php');
 		fileHelper::rrmdir($_GET['rmfile']);
 	}else{
-		unlink($_GET['rmfile']);	
+		SpoonFile::delete($_GET['rmfile']);	
 	}
 }
-if(isset($_GET['file'])&&is_file($_GET['file'])){
-	//redirect to edit
-}elseif(isset($_GET['add'])&&$_GET['add']&&$_GET['add']=='true'){
-	//redirect to add
+if(isset($_GET['file'])){
+	$dir=$_GET['file'];
+	if($dir==''){
+		$dir='/';
+	}
+}else{
+	$dir='/';
+}
+if(isset($_GET['file'])){
+	if(is_file($_GET['file'])){
+		//redirect to edit
+		SpoonHTTP::redirect('writr_edit.php?file='.$_GET['file']);
+	}elseif(is_dir($_GET['file'])&&isset($_GET['new'])&&$_GET['new']=='folder'){
+		//redirect to add
+		SpoonHTTP::redirect('writr_add.php?new=folder&file='.$dir);
+	}	
 }else{
 	//if we're browsing a folders
 	echo '<body class="no">';
@@ -48,8 +59,7 @@ if(isset($_GET['file'])&&is_file($_GET['file'])){
 	}
 	if($handle) {
 		while(($file = readdir($handle)) !== false) {
-			$dots=explode(".",$file);
-			$extension = end($dots);
+			$extension=SpoonFile::getExtension($file);
 			if (substr($file, 0, 1) != '.' && ($extension=='html'||is_dir($file))&&!in_array($file, $exclude)) {
 				if(is_dir($file)){
 					echo '<tr><td class="folder">'.$file.'</td><td><a href="?file='.$file.'">Open</a> | <a href="?delete=true&rmfile='.$file.'">Delete</a></td></tr>';
@@ -64,17 +74,9 @@ if(isset($_GET['file'])&&is_file($_GET['file'])){
 		}
 	}else{
 		//probably an invalid dir that the user inputted directly
-		throw new exception('Can\'t open specified dir.');
+		throw new SpoonException('Can\'t open specified dir.');
 	}
 	echo '</table>';
-	if(isset($_GET['file'])){
-		$dir=$_GET['file'];
-		if($dir==''){
-			$dir='/';
-		}
-	}else{
-		$dir='/';
-	}
 	echo '<br/><button type="submit"class="submit half" onclick="window.location = \'writr_add.php?file='.$dir.'\';">Add Page</button><button type="submit"class="submit half right" onclick="window.location = \'writr_add.php?new=folder&file='.$dir.'\';">Add Folder</button><br/>';
 }?>
   <br/><button type="submit"class="submit" onclick="document.cookie='writr' + '=' + '0';window.location = '';">Logout</button>

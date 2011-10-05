@@ -1,4 +1,4 @@
-<?php defined('CMS_LOADED') or die("Access Denied.");
+<?php
 /*
 	Class: Text
     Functions useful for working with text
@@ -29,4 +29,18 @@ class Text {
      	$text=strip_tags($text, $allowed);
      	return $text;
      }
+    /*
+	  Function: camelcase
+		Converts a string like test_string to TestString
+	  Parameters:
+	  	string- the string you want camelcased
+	  Returns:
+	  	the camelcased string
+	  	
+	*/
+     public function camelcase($string) {
+		$string = ucwords(str_replace(array('_', '-', '/'), ' ', $string));
+		$string = str_replace(' ', '', $string);
+		return $string;		
+	}
 }

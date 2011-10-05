@@ -1,7 +1,7 @@
 <?php
+include 'core/helpers/3rdparty/spoon/spoon.php';
 if(!file_exists('config.php')){
-	header("Location: writr_install.php");
-	exit;
+	SpoonHTTP::redirect('writr_install.php');
 }
  if(!empty($_POST)){
 	include('config.php');
@@ -13,8 +13,7 @@ if(!file_exists('config.php')){
 	if($user==USER && $pass==PASS){
 		$args=Events::fireEvent('on_user_valid_login',array($user));//can't be edited
 		setcookie("writr", "1", time() + 3600);
-		header("Location: writr.php");
-		exit;
+		SpoonHTTP::redirect('writr.php');
 	}else{
 		$args=Events::fireEvent('on_user_invalid_login',array($user,Visitor::getIP()));//can't be edited
 		echo 'Invalid username or password<br/>';

@@ -1,12 +1,12 @@
 <?php 
+include 'core/helpers/3rdparty/spoon/spoon.php';
 if(file_exists('config.php')){
-	header("Location: writr.php");
-	exit;
+	SpoonHTTP::redirect('writr.php');
 }
 if(!empty($_POST)){
 	foreach($_POST as $post){
 		if(!$post||$post==""){
-			throw new exception('Please fill out all information.');
+			throw new SpoonException('Please fill out all information.');
 		}
 	}
 	$configuration = "<?php\n";
@@ -15,9 +15,8 @@ if(!empty($_POST)){
 	$configuration .= "define('PASS', '" . addslashes($pass) . "');\n";
 	setcookie('writr', 1);
 	//create the file
-	file_put_contents('config.php', $configuration);
-	header("Location: writr.php");
-	exit;
+	SpoonFile::setContent('config.php', $configuration);
+	SpoonHTTP::redirect('writr.php');
 }?>
 <html>
 <head>

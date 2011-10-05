@@ -1,15 +1,16 @@
 <?php
+include 'core/helpers/3rdparty/spoon/spoon.php';
 //if config isn't made then we need to install
 if(!file_exists('config.php')){
-	header("Location: writr_install.php");
-	exit;
+	SpoonHTTP::redirect("writr_install.php");
+	
 }
 //add files and folders that you don't want edited to this array
 $exclude=array('themes','core','examples');
 //redirect to login if no cookie
 if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
-	header("Location: writr_login.php");
-	exit;
+	SpoonHTTP::redirect("writr_login.php");
+	
 }
 if(!empty($_POST)){
 	$file=$_POST['file'];
@@ -34,8 +35,8 @@ if(!empty($_POST)){
 	$content=preg_replace('#<title>(.*)</title>.*#smUi','',$content);
 	$content=str_replace('<head>', '<head><title>'.$title.'</title><meta name="description" content="'.$description.'" /><meta name="keywords" content="'.$keywords.'" />', $content);
 	//fire the event so others can manipulate the content
-	file_put_contents($file, $content);
-	header("Location: writr.php");
+	SpoonFile::setContent($file, $content);
+	SpoonHTTP::redirect("writr.php");
 }
 ?>
 <html><head>
@@ -44,7 +45,7 @@ if(!empty($_POST)){
 	<script src="core/js/base.js" type="text/javascript"></script>					
 </head>
 <?php
-if(is_file($_GET['file'])){
+if(isset($_GET['file'])&&is_file($_GET['file'])){
 	//if we're editing a file
 	echo '<body class="file">';
 	$content=file_get_contents($_GET['file']);
@@ -126,7 +127,7 @@ if(is_file($_GET['file'])){
   //]]>
   </script>
   <?php }else{
-  	header("Location: writr.php");
+  	SpoonHTTP::redirect("writr.php");
   }?>
 	<br/>
 	<button type="submit"class="submit" onclick="document.cookie='writr' + '=' + '0';window.location = '';">Logout</button>

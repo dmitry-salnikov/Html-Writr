@@ -1,24 +1,25 @@
 <?php
+include 'core/helpers/3rdparty/spoon/spoon.php';
 //if config isn't made then we need to install
 if(!file_exists('config.php')){
-	header("Location: writr_install.php");
-	exit;
+	SpoonHTTP::redirect("writr_install.php");
+	
 }
 //add files and folders that you don't want edited to this array
 $exclude=array('themes','core','examples');
 //redirect to login if no cookie
 if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
-	header("Location: writr_login.php");
-	exit;
+	SpoonHTTP::redirect("writr_login.php");
+	
 }
 if(!empty($_POST)){
 	if($_POST['type']=='folder'){
 		$dir=$_POST['name'];
 		if($_POST['name']==""){
-			throw new exception('Invalid Name');
+			throw new SpoonException('Invalid Name');
 		}
 		mkdir($dir);
-		header("Location: writr.php?file=".$dir);
+		SpoonHTTP::redirect("writr.php?file=".$dir);
 	}else{
 		$template=$_POST['template'];
 		$dir=$_POST['dir'].'/';
@@ -45,15 +46,15 @@ if(!empty($_POST)){
 		$args=Events::fire('page_edit',array($content,$filename,$template,$themename));//only modifying $content through this event has any effect
 		$content=$args[1];
 		//format the data from the events
-		file_put_contents($filename, $content);
+		SpoonFile::setContent($filename, $content);
 		//fire the event so we can manipulate the content.
-		header("Location: writr_edit.php?file=".$filename);
+		SpoonHTTP::redirect("writr_edit.php?file=".$filename);
 		//redirect to writr_edit
-		exit;
+		
 	}
 }
-if(!is_dir($_GET['file'])){
-		header("Location: writr.php");
+if(!isset($_GET['file'])||!is_dir($_GET['file'])){
+		SpoonHTTP::redirect("writr.php");
 }
 ?>
 <html><head>
@@ -62,12 +63,12 @@ if(!is_dir($_GET['file'])){
 	<script src="core/js/base.js" type="text/javascript"></script>					
 </head>
 <?php 
-if(is_dir($_GET['file'])){
+if(isset($_GET['file'])&&is_dir($_GET['file'])){
 	$dir=$_GET['file'];
 	if($dir==""){
 		$dir="/";
 	}
-	if(is_dir($_GET['file'])){
+	if(is_dir($dir)){
 		if($_GET['new']=='folder'){
 			//if we're adding a folder
 			echo '<body class="file">';
@@ -123,7 +124,7 @@ if(is_dir($_GET['file'])){
 				}
 			}else{
 				//probably an invalid dir that the user inputted
-				throw new exception('Can\'t open specified dir.');
+				throw new SpoonException('Can\'t open specified dir.');
 			}
 			echo '</table><input type="hidden" name="dir" value="'.$_GET['file'].'"/>
 			<button class="submit" type="submit">Add</button><br/></form>';

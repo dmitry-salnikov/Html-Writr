@@ -23,17 +23,43 @@ class Events {
 	   event - The name of the event you want to extend
 	   file - file that you want to load on calling the event
 	   function - the function that you want to call in the file
+	   pkg - the extension this is related with. Used for uninstalling.
 	   type - the type of the function that you want to call. 0 if you just want to get the data, 1 if you want to edit it.
 	
 	See Also:
 	
 	   <fire>
+	   <uninstallExtEvent>
 	*/
-    public static function registerEvent($event,$file,$function,$type=0){
+    public static function registerEvent($event,$file,$function,$ext, $type=0){
     	//add the event to the array
-    	self::$events[$event][]['function'] = $function;
-    	self::$events[$event][]['location'] = $file;
-    	self::$events[$event][]['type'] = $file;
+    	if($ext){
+    		self::$events[$event][$ext]['function'] = $function;
+    		self::$events[$event][$ext]['location'] = $file;
+    		self::$events[$event][$ext]['type'] = $file;
+    	}else{
+    		self::$events[$event][]['function'] = $function;
+    		self::$events[$event][]['location'] = $file;
+    		self::$events[$event][]['type'] = $file;
+    	}
+    }
+    /*
+	 Function: uninstallExtEvent
+	
+	Adds an event to the system
+	
+	Parameters:
+		event- the name of the event you want to uninstall
+	    ext - The name of the extension you want to uninstall events for
+	
+	See Also:
+	
+	   <fire>
+	   <registerEvent>
+	*/
+    public static function uninstallExtEvent($event,$ext){
+    	//remove the event
+    	unset(self::$events[$event][$ext]);
     }
     /** 
     * Does both methods, in the correct order
