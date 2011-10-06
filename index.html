@@ -17,7 +17,12 @@
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    hr {	height: 3px;
+	background-color: #eaeaea;
+	width:120%;
+	margin-left: -50px;
+	border: none;
+	}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
     body{
   	margin-left:auto;
@@ -91,6 +96,18 @@ a{
 a:hover{
 	text-decoration: underline;
 }
+a.active{
+	font-weight: bold;
+}
+ul.menu{
+	margin-right: -100px;
+	text-align: center;
+}
+ul.menu li{
+	display: inline;
+	margin-right: 100px;
+}
+
   </style>
 </head>
 
@@ -108,21 +125,20 @@ a:hover{
 
     <h1><a href="http://github.com/html-writr/Html-Writr">Html-Writr</a>
 </h1>
-
-    <div class="description">
-      Html Editing for Clients
-    </div>
+<hr/>
+    <ul class="menu"><li><a href="#" class="active">Home</a></li><li><a href="docs.html">Docs</a></li></ul>
+    <hr/>
 
 <h2>Introduction</h2>
 <p><a href="https://github.com/html-writr/Html-Writr">Html writr</a> is an innovative system that allows users with little to no technical knowledge to edit static html files. It is very easy to setup, and requires no database to use. The editing experience is simplistic but full featured, using <a href="http://www.nicedit.com">nicedit</a> for the wysiwyg editor, and allowing users to edit the page title, meta description, and meta keywords. Preparing html files for html writer to edit is very quick, just a couple of lines of code and you're done.</p>
-<h2>Installation</h2>
+<hr/><h2>Installation</h2>
 <ul>
 <li>Download the most recent version of html writr.</li>
 <li>Open the zip file, and copy the contents of the download (except for index.html) to the root of where you want html files to be editable- most often inside public_html.</li>
 <li>Go to yourwebsite.com/path/to/writr/writr_install.php and fill out the information with a username and password that you will use to login to edit.</li>
 <li>Click install, and you will be logged into html writr</li>
 </ul>
-<h2>Preparing a Template</h2>
+<hr/><h2>Preparing a Template</h2>
 <p>Html writr scans for the page title, meta description, and meta keywords automatically, so you just need to setup the editable areas in the content. To setup and editable area, just put &lt;!--start editable--&gt; at the beginning of the editable text and &lt;!--end editable--&gt; at the end. Its that easy. Sample Code:</p>
 <pre><code>&lt;html&gt;&lt;head&gt;
 &lt;title&gt;My Webpage Title&lt;/title&gt;
@@ -135,12 +151,12 @@ a:hover{
 This is your test content.
 &lt;!--end editable--&gt;
 &lt;/body&gt;&lt;/html&gt;</code></pre>
-<h2>Using Html Writr</h2>
+<hr/><h2>Using Html Writr</h2>
 <p>To use html writr, simple navigate to yourwebsite.com/path/to/writr/writr_login.php and login with the details that you entered when installing html writr. You should then be presented with a list of files in the directory where you installed html writr. Click on view to see a preview of the page, and click on edit to edit the html file.</p>
-<h2>Developer Options</h2>
+<hr/><h2>Developer Options</h2>
 <p>You can add exclude files or folders by adding files to the exclude array.<pre><code>$exclude=array('resources');</code></pre></p>
 
-
+<hr/>
     <h2>Download</h2>
     <p>
       You can download this project in either
@@ -151,7 +167,7 @@ This is your test content.
       by running:
       <pre>$ git clone git://github.com/html-writr/Html-Writr</pre>
     </p>
-
+<hr/>
     <div class="footer">
        <a href="http://github.com/html-writr/Html-Writr">Github</a> |
        <a href="https://www.ohloh.net/p/html-writr">Ohloh</a>
