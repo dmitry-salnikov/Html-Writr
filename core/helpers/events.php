@@ -14,6 +14,22 @@
 class Events {
 	public static $events = array();
 	/*
+	 Function: getEvents
+	
+	gets all the registered events
+	
+	Returns:
+	
+		events- an array of all registered events	
+		
+	See Also:
+	
+	   <fire>
+	*/
+	public function getEvents(){
+		return self::$events;
+	}
+	/*
 	 Function: registerEvent
 	
 	Adds an event to the system
@@ -73,9 +89,13 @@ class Events {
 	
 	   event - The name of the event you want to extend
 	   args - an array of the data you want to pass on to extensions
+	   
 	Returns:
+	
       The output of the events
+      
 	See Also:
+	
 	   <fireEvent>
 	   <fireEventEdit>
 	*/
@@ -97,6 +117,7 @@ class Events {
 	   args - an array of the data you want to pass on to extensions
 	
 	See Also:
+	
 	   <fire>
 	   <fireEventEdit>
 	*/
@@ -117,13 +138,20 @@ class Events {
 	
 	Fires the event and recieves the modified information. 
 	Put the content you want modified as the first value in args
+	
 	Building an event? You need to return an array of the modified args in the same format and order as you get it.
+	
 	Parameters:
+	
 	   event - The name of the event you want to extend
 	   args - an array of the data you want to pass on to extensions
+	   
 	Returns:
+	
       The output of the events
+      
 	See Also:
+	
 	   <fire>
 	   <fireEventEdit>
 	*/

@@ -2,7 +2,6 @@
 /*
 	Class: fileHelper
     Functions useful for working with files
-    About:
     - file		file.php
 	- version	1.0
 	- date		9/29/2011
@@ -14,8 +13,11 @@
 class fileHelper {
     /*
 	 Function: rrmdir
-	Deletes its directory and everything in it from http://www.php.net/manual/en/function.rmdir.php#98622
+	Deletes its directory and everything in it.
+	from http://www.php.net/manual/en/function.rmdir.php#98622
+	
 	Parameters:
+	
 	  dir- the directory you want to delete
 	*/
 	public function rrmdir($dir) { 

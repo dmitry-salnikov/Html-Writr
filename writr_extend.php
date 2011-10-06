@@ -9,6 +9,19 @@ if(!file_exists('config.php')){
 if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 	SpoonHTTP::redirect('writr_login.php');
 }
+if(isset($_GET['action'])&&isset($_GET['file'])){
+	if(is_dir('extend/'.$_GET['file'])||is_file('extend/'.$_GET['file'])){
+		$file=$_GET['file'];
+		if(is_dir('extend/'.$file)){
+			$file=$file.'/'.$file.'php';
+		}
+		if($_GET['action']=='install'){
+			Extend::install($file);
+		}elseif($_GET['action']=='uninstall'){
+			Extend::uninstall($file);
+		}
+	}
+}
 ?>
 <html><head>
 	<link rel="stylesheet" href="core/css/base.css"/>
@@ -16,7 +29,7 @@ if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 	<script src="core/js/base.js" type="text/javascript"></script>					
 </head>
 <body class="edit">
-	<button class="submit"onclick="window.location='writr.php'">&laquo; Back</button><br/><br/>';
+	<button class="submit"onclick="window.location='writr.php'">&laquo; Back</button><br/><br/>
 	<table class="no">
 	<tr><td class="header">Extensions</td><td class="header">Description</td><td class="header">Options</td></tr><?php
 	//if the current path is a dir then we open the dir- otherwise we open the root
@@ -43,7 +56,6 @@ if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 		//probably an invalid dir that the user inputted directly
 		throw new SpoonException('Can\'t open specified extend.');
 	}
-	echo '</table>';
-}?>
+	echo '</table>';?>
   <br/><button type="submit"class="submit" onclick="document.cookie='writr' + '=' + '0';window.location = '';">Logout</button>
 </body></html>

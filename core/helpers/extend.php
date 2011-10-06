@@ -2,7 +2,6 @@
 /*
 	Class: Extend
     Functions for working with extensions
-    About:
     - file		extend.php
 	- version	1.0
 	- date		10/3/2011
@@ -14,6 +13,23 @@
 class Extend {
 	public static $installed = array();
 	/*
+	 Function: getInstalled
+	
+	gets all the installed extensions
+	
+	Returns:
+	
+		installed- an array of all installed extensions	
+		
+	See Also:
+	
+	   <Install>
+	   <Uninstall>
+	*/
+	public function getEvents(){
+		return self::$installed;
+	}
+	/*
 	 Function: Install
 	
 	Installs an extensions
@@ -21,14 +37,22 @@ class Extend {
 	Parameters:
 	
 	   extension - The name of the extension that you are installing
+	   
+	See Also:
+	
+	   <Uninstall>
+	   <getInfo>
 	
 	*/
-    public static function install$extension){
+    public static function install($extension){
     	//add the event to the array
     	self::$installed[$extension] = 'installed';
-    	include 'text.php';
+    	include_once 'text.php';
+    	include_once 'extend/'.$extension;
+    	$extension=str_replace('.php', '', $extension);
     	$class=Text::camelcase($extension);
-    	$class::install();
+    	$ext=new $class();
+    	$ext->install();
     }
     /*
 	 Function: Uninstall
@@ -38,14 +62,23 @@ class Extend {
 	Parameters:
 	
 	   extension - The name of the extension that you are uninstalling
+	   
+	See Also:
+	
+	   <Install>
+	   <getInstalled>
+	   <getInfo>
 	
 	*/
-    public static function uninstall$extension){
+    public static function uninstall($extension){
     	//add the event to the array
     	unset(self::$installed[$extension]);
-    	include 'text.php';
+    	include_once 'text.php';
+    	include_once 'extend/'.$extension;
+    	$extension=str_replace('.php', '', $extension);
     	$class=Text::camelcase($extension);
-    	$class::uninstall();
+    	$ext=new $class();
+    	$ext->uninstall();
     	//its your job to remove all your hooks
     }
     /*
@@ -55,7 +88,12 @@ class Extend {
 	
 	Returns:
 		installed- an array of extension folder names
+		
+	See Also:
 	
+	   <Install>
+	   <Uninstall>
+	   <getInfo>
 	*/
     public static function getInstalled(){
     	$installed=array();
@@ -72,16 +110,23 @@ class Extend {
 	
 	Parameters:
 	
-	   extension - The name of the extension that you are installing
+	   file - The folder name of the extension that you are installing
 	Returns:
 		info- an array of the information
+		
+	See Also:
+	
+	   <Install>
+	   <Uninstall>
 	
 	*/
-    public static function getInfo($extension){
-    	include 'text.php';
-    	include '../../extend/'.$extension;
+    public static function getInfo($file){
+    	include_once 'text.php';
+    	include_once 'extend/'.$file;
+    	$extension=str_replace('.php', '', $file);
 		$class=Text::camelcase($extension);
-		$info=$class::getInfo();
+		$ext=new $class();
+    	$info=$ext->getInfo();
 		return $info;
     }
 }

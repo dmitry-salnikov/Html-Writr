@@ -5,7 +5,7 @@ if(!file_exists('config.php')){
 	SpoonHTTP::redirect('writr_install.php');
 }
 //add files and folders that you don't want edited to this array
-$exclude=array('themes','core','examples');
+$exclude=array('themes','core','examples','extend');
 //redirect to login if no cookie
 if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 	SpoonHTTP::redirect('writr_login.php');
@@ -79,5 +79,6 @@ if(isset($_GET['file'])){
 	echo '</table>';
 	echo '<br/><button type="submit"class="submit half" onclick="window.location = \'writr_add.php?file='.$dir.'\';">Add Page</button><button type="submit"class="submit half right" onclick="window.location = \'writr_add.php?new=folder&file='.$dir.'\';">Add Folder</button><br/>';
 }?>
-  <br/><button type="submit"class="submit" onclick="document.cookie='writr' + '=' + '0';window.location = '';">Logout</button>
+  <br/><a class="submit" href="writr_extend.php">Extensions</a><br/><br/>
+  <button type="submit"class="submit" onclick="document.cookie='writr' + '=' + '0';window.location = '';">Logout</button>
 </body></html>

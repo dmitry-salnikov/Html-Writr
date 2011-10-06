@@ -75,7 +75,7 @@ if(!defined('SPOON_AUTOLOADER'))
 }
 
 /* SpoonException class */
-require_once 'spoon/exception/exception.php';
+require_once 'exception/exception.php';
 
 // check mbstring extension
 if(!extension_loaded('mbstring'))

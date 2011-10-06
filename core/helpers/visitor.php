@@ -2,7 +2,6 @@
 /*
 	Class: Visitor
     Gives you information about your visitors
-    About:
     - file		visitor.php
 	- version	1.0
 	- date		10/1//2011
@@ -15,7 +14,9 @@ class Visitor {
     /*
 	 Function: getIP
 	Gets the visitors ip address
+	
 	Returns:
+	
 	  ip- the ip address
 	*/
 	public function getIP() {			
