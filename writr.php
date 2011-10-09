@@ -5,7 +5,7 @@ if(!file_exists('config.php')){
 	SpoonHTTP::redirect('writr_install.php');
 }
 //add files and folders that you don't want edited to this array
-$exclude=array('themes','core','examples','extend');
+$exclude=array('themes','core','examples','extend','helpers','js','css','tests');
 //redirect to login if no cookie
 if(!isset($_COOKIE['writr'])||$_COOKIE['writr']!=1){
 	SpoonHTTP::redirect('writr_login.php');
