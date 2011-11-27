@@ -6,6 +6,7 @@ if(!file_exists('config.php')){
  if(!empty($_POST)){
 	include('config.php');
 	include 'core/helpers/events.php';
+	include 'core/helpers/visitor.php';
 	$user=strip_tags($_POST['user']);
 	$pass=strip_tags($_POST['pass']);
 	$pass=md5($pass.'html-writr');
@@ -14,7 +15,7 @@ if(!file_exists('config.php')){
 		setcookie("writr", "1", time() + 3600);
 		SpoonHTTP::redirect('writr.php');
 	}else{
-		$args=Events::fireEvent('on_user_invalid_login',array($user));//can't be edited
+		$args=Events::fireEvent('on_user_invalid_login',array($user,Visitor::getIP()));//can't be edited
 		echo 'Invalid username or password<br/>';
 	}
 }?>
